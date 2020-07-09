@@ -475,7 +475,7 @@ Page({
                   })
                   setTimeout(()=>{
                     wx.navigateTo({
-                      url: '/pages/index/index',
+                      url: '/pages/sign_request/sign_request',
                     })
                   },4000)
                 } else {
