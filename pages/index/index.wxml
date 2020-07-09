@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="page-m">
+	<view wx:if="{{!hasAccountInfo}}" class="usermotto">
+		<view class="user-motto">
+			<image src="../../images/1.png" mode="aspectFit" class="img"></image>
+			<view>欢迎使用签名助手，</view>
+			<view>本应用供校内用户签名使用，</view>
+			<view>首次使用请用智慧学工系统账户进行绑定！</view>
+		</view>
+		<view class="btn-position"> 
+		<button bindtap="toBindAccount" type="primary" size="large">去绑定身份</button>
+		</view>
+		
+	</view>
+
+	<view wx:if="{{hasAccountInfo}}" class="usermotto">
+		<view class="user-motto">
+			<view>您已经完成身份绑定，</view>
+			<view>请点击下面的按钮进行下一步操作！</view>
+		</view>
+		<view class="notice-card">
+			<view>姓名：{{accountInfo.name}}</view>
+			<view>账号：{{accountInfo.username}}</view>
+			<view>学院：{{accountInfo.deptname}}</view>
+		</view>
+		<view class="btn-position"> 
+			<button bindtap="toSign" type="primary"  size="large" style="margin-top:20px;">去签名</button>
+		</view>
+	</view>
+</view>

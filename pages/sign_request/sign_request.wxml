@@ -1,0 +1,26 @@
+<!--pages/sign_request/sign_reqeust.wxml-->
+<view class="page-m">
+	<view wx:if="{{!canISign}}" class="user-motto">
+		<image src="../../images/2.png" mode="aspectFit" class="img"></image>
+		<view>目前没有找到您签名请求数据，</view>
+		<view>请确保已在系统内要签名的位置点击</view>
+		<view>“签名”按钮发起签名请求！</view>
+		<view>我已发起签名请求，点击下方按钮</view>
+		<view class="btn-position">
+			<button bindtap="refreshSignRequest" type="primary">刷新数据</button>
+		</view>
+	</view>
+	<view wx:else="{{canISign}}">
+		<view class="notice-card" wx:for="{{list}}" wx:key="index">
+			<view class="notice-text-title">签名请求，信息如下</view>
+			<view>业务系统：{{item.appName}}</view>
+			<view>业务描述：{{item.description}}</view>
+			<view>请求时间：{{item.whenCreated}}</view>
+			<button bindtap="toSign"  data-id="{{item.id}}" type="primary">去签名</button>
+		</view>
+		<!-- <view class="btn-position">
+			<button bindtap="toSignPage" type="primary">开始签名</button>
+			<button wx:if="{{lastSignId}}" bindtap="useLastSign" type="primary" style="margin-top:20px;">使用上一次签名</button>
+		</view> -->
+	</view>
+</view>

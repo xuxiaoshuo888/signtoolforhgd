@@ -1,0 +1,12 @@
+<!--pages/test/test.wxml-->
+<view class="wrapper">
+	
+	<view class="handCenter">
+		<canvas class="handWriting" disable-scroll="true" bindtouchstart="uploadScaleStart" bindtouchmove="uploadScaleMove" bindtouchend="uploadScaleEnd" canvas-id="handWriting">
+		</canvas>
+	</view>
+  <view class="handBtn">
+		<button catchtap="retDraw" class="delBtn">重 写</button>
+		<button catchtap="uploadCanvasImg" class="subBtn">提 交</button>
+	</view>
+</view>

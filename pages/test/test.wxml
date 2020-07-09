@@ -1,0 +1,22 @@
+<!--pages/test/test.wxml-->
+<view class="wrapper">
+	<view class="handBtn">
+		<!-- <image catchtap="selectColorEvent" src="{{ selectColor === 'black' ? '../../images/color_black_selected.png' : '../../images/color_black.png' }}" class="{{ selectColor === 'black' ? 'color_select' : '' }} black-select" data-color="black" data-color-value="#1A1A1A"></image>
+		<image catchtap="selectColorEvent" src="{{ selectColor === 'red' ? '../../images/color_red_selected.png' : '../../images/color_red.png' }}" class="{{ selectColor === 'red' ? 'color_select' : '' }} red-select" data-color="red" data-color-value="#ca262a"></image> -->
+		<button catchtap="retDraw" class="delBtn">重写</button>
+    <!-- <button catchtap="" class="saveBtn">保存</button>
+		<button catchtap="" class="prevBtn">预览</button> -->
+
+		<button catchtap="saveCanvasAsImg" class="subBtn">完成</button>
+	</view>
+	<view class="handCenter">
+		<canvas class="handWriting" disable-scroll="true" bindtouchstart="uploadScaleStart" bindtouchmove="uploadScaleMove" bindtouchend="uploadScaleEnd" bindtap="mouseDown" canvas-id="handWriting">
+		</canvas>
+	</view>
+	<view class="handRight">
+		<view class="handTitle">手写板</view>
+	</view>
+	<!-- 隐藏的canvas，用于保存竖屏签名 -->
+	<canvas disable-scroll="true" class="shadow-canvas" canvas-id="shadowCanvas">
+		</canvas>
+</view>

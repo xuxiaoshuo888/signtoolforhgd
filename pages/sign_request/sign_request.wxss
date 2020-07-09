@@ -1,0 +1,16 @@
+/* pages/sign_request/sign_reqeust.wxss */
+.notice{
+  padding: 200rpx 50rpx;
+}
+.notice-text{
+  font-size: 32rpx;
+  text-indent: 64rpx;
+  line-height: 1.5;
+  margin-bottom: 100rpx;
+}
+/* .notice-text-title{
+  font-size: 36rpx;
+  line-height: 1.5;
+  text-indent: 0;
+  margin-bottom: 50rpx;
+} */

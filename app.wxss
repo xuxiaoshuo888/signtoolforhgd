@@ -1,0 +1,69 @@
+/**app.wxss**/
+ @import './style/weui.wxss';
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+
+.notice-text-title{
+  font-size:16px;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:500;
+  color:rgba(59,72,89,1);
+  line-height:22px;
+}
+
+
+
+/**/
+.page-m{
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f9fa;
+  padding-top: 80rpx;
+  box-sizing: border-box;
+}
+.usermotto {
+  padding: 32rpx;
+}
+.user-motto{
+  font-size:30rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+  font-weight:600;
+  color:#5A617C;
+  line-height:26px;
+  text-align: center;
+  margin-bottom: 50rpx;
+}
+.notice-card{
+  font-size:30rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+  color:rgba(90,97,124,1);
+  line-height:20px;
+  padding: 40rpx;
+  background:#f6f9fa;
+  border-radius:14px;
+  margin: 32rpx;
+  box-shadow:0px 3px 10px 0px rgba(197,201,213,0.25);
+}
+.notice-card>view{
+  margin-bottom: 10px;
+}
+.btn-position{
+  position: fixed;
+  bottom: 150rpx;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+.img{
+  width: 482rpx;
+  height: 516rpx;
+  margin-bottom: 50rpx;
+}

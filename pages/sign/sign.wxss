@@ -1,0 +1,63 @@
+page {
+  background: #fbfbfb;
+  height: auto;
+  overflow: hidden;
+}
+ 
+.wrapper {
+  height: 100%;
+  margin: 0 30rpx 0 30rpx;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  font-size: 28rpx;
+}
+
+.handCenter {
+  border: 4rpx dashed #e9e9e9;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 180vh;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.handWriting {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+ 
+.handBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-top: 5rpx;
+}
+
+ 
+.handBtn button {
+  
+  font-size: 14rpx;
+}
+ 
+
+ 
+.delBtn {
+  background: red;
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+}
+
+ 
+.subBtn {
+  
+  background: #008ef6;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+}
