@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/bind/bind",
     "pages/index/index",
+    "pages/bind/bind",
     "pages/sign/sign",
     "pages/logs/logs",
     "pages/sign_request/sign_request",

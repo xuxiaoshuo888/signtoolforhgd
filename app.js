@@ -37,7 +37,7 @@ App({
     })
   },
   globalData: {
-    serverPath:"http://192.168.0.20:8888",
+    serverPath:"https://i-gateway.hit.edu.cn",
     userInfo: null,
     token:'',
     accountInfo: null,//accoutInfo标识我们自己的后台账户，如果没有绑定则为null
